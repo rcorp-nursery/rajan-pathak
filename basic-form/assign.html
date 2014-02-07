@@ -1,0 +1,49 @@
+
+<html>
+<head>
+<title>assign book</title>
+ <style type="text/css">
+ 
+
+ body, html {
+    color: #373C40;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: #f0f0f0;
+    margin:10px;
+}
+form {
+    padding: 100px 0 100px 0;
+    font-weight: 500;
+    font-size: 10pt;
+    border:5px solid black;
+
+}
+select{
+       
+
+      }
+
+</style>
+</head>
+<body>
+<form action="assign.php" method="post">	
+<label>student</label>
+<select name="student">
+     <option value="0"></option>
+	 <option value="rajan">rajan</option>
+	 <option value="rohit">rohit</option>
+	 <option value="bharat">bharat</option>
+	</select><br><br>
+	<label>book_name</label>
+	<select name="book_name">
+     <option value="0"></option>
+	 <option value="c">c</option>
+	 <option value="cplus">cplus</option>
+	 <option value="java">java</option>
+	</select>
+	
+<input type="submit" name="submit" value="Assign">
+</form>
+</body>
+</html>
