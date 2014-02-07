@@ -1,0 +1,29 @@
+<style type="text/css">
+
+
+    { padding: 0;
+        margin: 0;
+        border: 0;
+    }
+    body, html {
+        color: #373C40;
+        font-family: Verdana,Arial, Helvetica, sans-serif;
+        height: 100%;
+        background-color: #f0f0f0;
+        margin:10px;
+    }
+    body {
+        font-size: 70%;
+    }
+    p {
+        padding: 7px 0 7px 0;
+        font-weight: 500;
+        font-size: 10pt;
+    }
+
+    h1{font-family: Calibri; font-size: 22pt; font-style: normal; font-weight: bold; color:SlateBlue;
+        text-align: center; text-decoration: underline }
+        table{font-family: Calibri; color:white; font-size: 11pt; font-style: normal;
+            text-align:; background-color: SlateBlue; border-collapse: collapse; border: 2px solid navy}
+            table.inner{border: 0px}
+            </style>

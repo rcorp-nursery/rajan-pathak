@@ -1,0 +1,52 @@
+
+<html>
+<head>
+<title>view</title>
+ <style type="text/css">
+ 
+
+ body, html {
+    color: #373C40;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: #f0f0f0;
+    margin:10px;
+}
+form {
+    padding: 100px 0 100px 0;
+    font-weight: 500;
+    font-size: 10pt;
+    border:5px solid black;
+
+}
+
+</style>
+
+</head>
+<body>
+    <?php
+   $con=mysqli_connect("localhost","root","","book");
+     if (mysqli_connect_errno())
+      {
+       echo "Failed to connect to MySQL: " . mysqli_connect_error();
+      }
+$result = mysqli_query($con,"SELECT FirstName,LastName FROM students");
+<form>
+<label>student</label>
+<select>
+<option value="0"></option>
+<?php
+    while($row = mysqli_fetch_array($result))
+  {
+  ?>
+  
+
+     <option value="<?php echo['S_id'] ?>"><?php echo $row['FirstName'] .$row['LasttName'] ?></option>
+<?php 
+  }
+  ?>
+	</select>
+	<input type="submit" name="view" value="view">
+</form>
+	</body>
+	</html>
